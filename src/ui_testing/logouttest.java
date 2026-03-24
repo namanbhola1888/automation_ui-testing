@@ -6,7 +6,6 @@ public class logouttest {
 	public static void main(String[] args) throws InterruptedException {
 
 	        ChromeDriver driver = new ChromeDriver();
-	        driver.manage().window().maximize();
 
 	        driver.get("https://github.com/namanbhola1888");
 	        
@@ -14,6 +13,7 @@ public class logouttest {
 
 	        driver.findElement(By.xpath("//button[contains(text(),'Sign out')]")).click();
 	        
+	        driver.manage().window().maximize();
 	        driver.close();
 	}
 }

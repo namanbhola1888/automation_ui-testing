@@ -11,11 +11,9 @@ public class new_repo {
         dr2.get("https://github.com/login");
 
         dr2.findElement(By.id("login_field")).sendKeys("namanbhola1888");
-        dr2.findElement(By.id("password")).sendKeys("#Namanji01234");
+        dr2.findElement(By.id("password")).sendKeys("my_pass");
 
         dr2.findElement(By.name("commit")).click();
-
-//        Thread.sleep(3000);
 		
 		dr2.get("https://github.com/new");
 		
